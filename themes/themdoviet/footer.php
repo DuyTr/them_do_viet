@@ -10,25 +10,27 @@
 
 ?>
 
-		</section>
-		<div id="footer-container">
-			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
+	</section>
+	<div id="footer-container">
+		<footer id="footer">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Help & support</a></li>
+				<li><a href="">Terms</a></li>
+			</ul>
+		</footer>
+		<div class="footer-bottom">
+			<ul>
+				<li><a href=""><i class="fa fa-facebook-square"></i></a></li>
+				<li><a href=""><i class="fa fa-twitter-square"></i></a></li>
+				<li><a href=""><i class="fa fa-envelope"></i></a></li>
+			</ul>
+			<span class="copyright">&#169; copyright themdoviet</span>	
 		</div>
-
-		<?php do_action( 'foundationpress_layout_end' ); ?>
-
-<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
-		</div><!-- Close off-canvas wrapper inner -->
-	</div><!-- Close off-canvas wrapper -->
-</div><!-- Close off-canvas content wrapper -->
-<?php endif; ?>
+	</div>
+			
 
 
 <?php wp_footer(); ?>
-<?php do_action( 'foundationpress_before_closing_body' ); ?>
 </body>
 </html>

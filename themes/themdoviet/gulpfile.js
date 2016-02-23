@@ -13,7 +13,7 @@ var del         = require('del');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
-var URL = '';
+var URL = 'http://localhost:8888/themdoviet/';
 
 // Check for --production flag
 var isProduction = !!(argv.production);

@@ -2,17 +2,36 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	border-top: 1px solid #ccc;
-	margin-top: rem-calc(60);
-
-	#footer {
-		@include grid-row();
-		padding: rem-calc(30) 0;
-
-		ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
+	background-color: $red;
+	padding: $panel-padding;
+	text-align: center;
+	text-transform: capitalize;
+	color: $white;
+	font-size: 22px;
+	ul{
+		list-style-type: none;
+		li{
+			display: inline-block;
 		}
+	}
+	a{
+		color: $white;
+	}
+	a:hover{
+		color: $gray;
+	}
+	#footer {
+		li{
+			margin: 0 10px;
+		}
+	}
+	.footer-bottom{
+		li{
+			margin: 0 5px;
+		}
+	}
+	.copyright{
+		font-size: 14px;
+		text-transform: capitalize;
 	}
 }
